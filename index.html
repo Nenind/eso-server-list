@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+
+    <title>ESO Servers</title>
+</head>
+<body>
+    <div class="header">
+        <div class="theme-toogle"></div>
+        <div class="logo"></div>
+        <div class="my-servers-button">Mои серверы</div>
+    </div>
+    <div class="my-servers-form">
+        <div id="auth" class="my-servers-form-button">Войти через Discord</div>
+        <div id="createServer" class="my-servers-form-button server-enter-data">Создать сервер</div>
+        <div id="account" class=" ">
+            <div id="accStatus" >Вход выполнен</div>
+            <div>id: <span id="accId">2</span></div>
+            <div>Логин: <span id="accUsername">Ржавой Панк Шиза Санитара</span></div>
+            <input type="text" placeholder="Telegram ID" id="accTelegramId">
+            <div id="updateAccData" class="my-servers-form-button">Обновить</div>
+        </div>
+        <div id="signupForm" class=" hide">
+            <input type="text" placeholder="Логин" id="signupUsername">
+            <div id="signupAction" class="my-servers-form-button">Вход</div>
+        </div>
+        <h3>Мои серверы:</h3>
+        <div id="servers">
+            <div class="server">
+                <div class="server-info">2 eso "имя": фамилия</div>
+                <div class="my-servers-form-button">Перезапустить</div>
+                <div class="my-servers-form-button server-enter-data">Изменить</div>
+            </div>
+            <div class="server">
+                <div class="server-name"></div>
+                <div class="server-info">2 eso "Название": Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                <div class="my-servers-form-button">Перезапустить</div>
+                <div class="my-servers-form-button change-action server-enter-data">Изменить</div>
+            </div>
+            <div class="server">
+                <div class="server-info">2 eso "имя": фамилия</div>
+                <div class="my-servers-form-button">Перезапустить</div>
+                <div class="my-servers-form-button server-enter-data">Изменить</div>
+            </div>
+        </div>
+    </div>
+    <div id="serverParamsForm" class=" ">
+        <h2 id="serverParamsFormType">Данные сервера:</h2>
+        <input type="text" placeholder="Название" id="formServerName">
+        <input type="text" placeholder="Описание" id="formServerDescription">
+        <textarea type="text" placeholder="Модераторы" id="formServerModerators"></textarea>
+        <div id="serverParamsAction" class="my-servers-form-button">Отправить</div>
+        <div class="my-servers-form-button server-enter-data-cancel">Отмена</div>
+    </div>
+    <div class="server-list-container">
+        <div class="server-list-header">
+            <div class="server-list-name">Имя сервера</div>
+            <div class="server-list-description">Описание</div>
+            <div class="server-list-pack">Ресурс-пак</div>
+            <div class="server-list-players">Игроков</div>
+        </div>
+        <div class="server-list-item">
+            <div class="server-list-name">РП-сервер</div>
+            <div class="server-list-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+            <div class="server-list-pack"><span>БЛО</span></div>
+            <div class="server-list-players"><span>228</span></div>
+        </div>
+        <div class="server-list-item">
+            <div class="server-list-name">Фан-сервер</div>
+            <div class="server-list-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+            <div class="server-list-pack"><span>Doki-doki</span></div>
+            <div class="server-list-players"><span>10</span></div>
+        </div>
+        <div class="server-list-item">
+            <div class="server-list-name">Фан-сервер</div>
+            <div class="server-list-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+            <div class="server-list-pack"><span>Doki-doki</span></div>
+            <div class="server-list-players"><span>10</span></div>
+        </div>
+        <div class="server-list-item">
+            <div class="server-list-name">Фан-сервер</div>
+            <div class="server-list-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+            <div class="server-list-pack"><span>Doki-doki</span></div>
+            <div class="server-list-players"><span>10</span></div>
+        </div>
+        <div class="server-list-item">
+            <div class="server-list-name">Фан-сервер</div>
+            <div class="server-list-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+            <div class="server-list-pack"><span>Doki-doki</span></div>
+            <div class="server-list-players"><span>10</span></div>
+        </div>
+        <div class="server-list-item">
+            <div class="server-list-name">Фан-сервер</div>
+            <div class="server-list-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+            <div class="server-list-pack"><span>Doki-doki</span></div>
+            <div class="server-list-players"><span>10</span></div>
+        </div>
+        <div class="server-list-item">
+            <div class="server-list-name">Фан-сервер</div>
+            <div class="server-list-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+            <div class="server-list-pack"><span>Doki-doki</span></div>
+            <div class="server-list-players"><span>10</span></div>
+        </div>
+        <div class="server-list-item">
+            <div class="server-list-name">Фан-сервер</div>
+            <div class="server-list-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+            <div class="server-list-pack"><span>Doki-doki</span></div>
+            <div class="server-list-players"><span>10</span></div>
+        </div>
+        <div class="server-list-item">
+            <div class="server-list-name">Фан-сервер</div>
+            <div class="server-list-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+            <div class="server-list-pack"><span>Doki-doki</span></div>
+            <div class="server-list-players"><span>10</span></div>
+        </div>
+        <div class="server-list-item">
+            <div class="server-list-name">Фан-сервер</div>
+            <div class="server-list-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+            <div class="server-list-pack"><span>Doki-doki</span></div>
+            <div class="server-list-players"><span>10</span></div>
+        </div>
+        <div class="server-list-item">
+            <div class="server-list-name">Фан-сервер</div>
+            <div class="server-list-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+            <div class="server-list-pack"><span>Doki-doki</span></div>
+            <div class="server-list-players"><span>10</span></div>
+        </div>
+        <div class="server-list-item">
+            <div class="server-list-name">Фан-сервер</div>
+            <div class="server-list-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+            <div class="server-list-pack"><span>Doki-doki</span></div>
+            <div class="server-list-players"><span>10</span></div>
+        </div>
+        <div class="server-list-item">
+            <div class="server-list-name">Фан-сервер</div>
+            <div class="server-list-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+            <div class="server-list-pack"><span>Doki-doki</span></div>
+            <div class="server-list-players"><span>10</span></div>
+        </div>
+        <div class="server-list-item">
+            <div class="server-list-name">Фан-сервер</div>
+            <div class="server-list-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+            <div class="server-list-pack"><span>Doki-doki</span></div>
+            <div class="server-list-players"><span>10</span></div>
+        </div>
+        <div class="server-list-item">
+            <div class="server-list-name">Фан-сервер</div>
+            <div class="server-list-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+            <div class="server-list-pack"><span>Doki-doki</span></div>
+            <div class="server-list-players"><span>10</span></div>
+        </div>
+        <div class="server-list-item">
+            <div class="server-list-name">Фан-сервер</div>
+            <div class="server-list-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+            <div class="server-list-pack"><span>Doki-doki</span></div>
+            <div class="server-list-players"><span>10</span></div>
+        </div>
+        <div class="server-list-item">
+            <div class="server-list-name">Фан-сервер</div>
+            <div class="server-list-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+            <div class="server-list-pack"><span>Doki-doki</span></div>
+            <div class="server-list-players"><span>10</span></div>
+        </div>
+        <div class="server-list-item">
+            <div class="server-list-name">Фан-сервер</div>
+            <div class="server-list-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+            <div class="server-list-pack"><span>Doki-doki</span></div>
+            <div class="server-list-players"><span>10</span></div>
+        </div>
+        <div class="server-list-item">
+            <div class="server-list-name">Фан-сервер</div>
+            <div class="server-list-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+            <div class="server-list-pack"><span>Doki-doki</span></div>
+            <div class="server-list-players"><span>10</span></div>
+        </div>
+        <div class="server-list-item">
+            <div class="server-list-name">Фан-сервер</div>
+            <div class="server-list-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+            <div class="server-list-pack"><span>Doki-doki</span></div>
+            <div class="server-list-players"><span>10</span></div>
+        </div>
+        <div class="server-list-item">
+            <div class="server-list-name">Фан-сервер</div>
+            <div class="server-list-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+            <div class="server-list-pack"><span>Doki-doki</span></div>
+            <div class="server-list-players"><span>10</span></div>
+        </div>
+        <div class="server-list-item">
+            <div class="server-list-name">Фан-сервер</div>
+            <div class="server-list-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+            <div class="server-list-pack"><span>Doki-doki</span></div>
+            <div class="server-list-players"><span>10</span></div>
+        </div>
+        <div class="server-list-item">
+            <div class="server-list-name">Фан-сервер</div>
+            <div class="server-list-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+            <div class="server-list-pack"><span>Doki-doki</span></div>
+            <div class="server-list-players"><span>10</span></div>
+        </div>
+        <div class="server-list-item">
+            <div class="server-list-name">Фан-сервер</div>
+            <div class="server-list-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+            <div class="server-list-pack"><span>Doki-doki</span></div>
+            <div class="server-list-players"><span>10</span></div>
+        </div>
+        <div class="server-list-item">
+            <div class="server-list-name">Фан-сервер</div>
+            <div class="server-list-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+            <div class="server-list-pack"><span>Doki-doki</span></div>
+            <div class="server-list-players"><span>10</span></div>
+        </div>
+        <div class="server-list-item">
+            <div class="server-list-name">Фан-сервер</div>
+            <div class="server-list-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+            <div class="server-list-pack"><span>Doki-doki</span></div>
+            <div class="server-list-players"><span>10</span></div>
+        </div>
+        <div class="server-list-item">
+            <div class="server-list-name">Фан-сервер</div>
+            <div class="server-list-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+            <div class="server-list-pack"><span>Doki-doki</span></div>
+            <div class="server-list-players"><span>10</span></div>
+        </div>
+        <div class="server-list-item">
+            <div class="server-list-name">Фан-сервер</div>
+            <div class="server-list-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+            <div class="server-list-pack"><span>Doki-doki</span></div>
+            <div class="server-list-players"><span>10</span></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
