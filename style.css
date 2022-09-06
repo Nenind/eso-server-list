@@ -6,6 +6,7 @@ html, body  {
 
 body {
     background-image: url("bg-es.jpg");
+    /* background-image: url("https://i.imgur.com/lXxUniF.jpg"); */
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -23,7 +24,7 @@ body {
 
 
 
-body::-webkit-scrollbar {
+body::-webkit-scrollbar, .my-servers-form::-webkit-scrollbar {
     display: none;
 }
 
@@ -34,12 +35,13 @@ body::-webkit-scrollbar {
 
 .theme-toogle {
     position: relative;
-    height: 50px;
+    height: 25px;
     width: 50px;
     margin: 20px;
     background-size: contain;
     background-repeat: no-repeat;
     background-image: url("sw-es.png");
+    /* background-image: url("https://i.imgur.com/j7MeRBO.png"); */
 }
 
 .logo {
@@ -47,12 +49,13 @@ body::-webkit-scrollbar {
     width: 350px;
     background-size: cover;
     background-image: url("logo-es.png");
+    /* background-image: url("https://i.imgur.com/HbUs95z.png"); */
     display: block;
     margin: 30px auto 30px auto;
 }
 .my-servers-button {
     cursor: pointer;
-    background: rgba(0, 0, 0, 0.25);
+    background: rgba(0, 0, 0, 0.5);
     margin: auto;
     padding: 25px 25px;
     width: fit-content;
@@ -64,7 +67,7 @@ body::-webkit-scrollbar {
     transition: all 0.3s ease-in-out;
 }
 .my-servers-button:hover {
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.8);
 }
 
 .my-servers-form {
@@ -75,30 +78,38 @@ body::-webkit-scrollbar {
     top: 15%;
     width: 70%;
     height: 70%;
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
     background: rgba(0,0,0,0.65);
     border-radius: 5px;
     padding: 20px;
     z-index: 2;
-    overflow: auto;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
 }
 
-.my-servers-form > div {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.my-servers-form-button-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+}
+
+.my-servers-form-button-container *{
+    margin: 10px;
+}
+
+.my-servers-form * {
+    margin: 0px auto;
 }
 
 .my-servers-form-button {
+    margin: 10px auto;
+    text-align: center;
+    width: fit-content;
+    display: block;
     padding: 7px 9px;
     border-radius: 5px;
-    width: fit-content;
     background-color: #d1bc82;
     color: #000000;
-    margin: 10px;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
@@ -121,54 +132,135 @@ body::-webkit-scrollbar {
     margin: auto;
     display: none;
     position: absolute;
-    margin-left: auto;
-    margin-right: auto;
     left: 0;
     right: 0;
     text-align: center;
     width: fit-content;
-    background: rgba(0,0,0,0.8);
+    background: rgba(0, 0, 0, 0.85);
     border-radius: 5px;
-    padding: 20px 40px;
-
+    padding: 15px 40px;
 }
 
 input, textarea {
+    width: min-content;
     font-family: 'Roboto', sans-serif;
     display: block;
     border: none;
-    border-bottom: 1px solid #bfbfbf;
-    margin-top: 50px;
+    margin: 20px auto;
+    border-bottom: 1px solid #c9c9c9;
     background-color: rgba(0, 0, 0, 0.1);
     outline: none;
     color: #d1bc82;
     font-size: 12pt;
 }
 
-#serverParamsForm > div{
-    display: inline-block;
+#account {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
-#serverParamsAction {
+#account *{
+    margin: 5px auto;
+}
+
+#serverParamsForm > input, textarea {
+    width: 100%;
+    margin: 30px auto;
+}
+
+#serverParamsForm > div{
+    display: inline-block;
+    margin: 20px 10px;
+}
+
+#showMyServers {
+    background: rgba(0,0,0,0.3);
+    padding: 10px 15px;
+    width: fit-content;
+    border-radius: 5px;
+    text-align: center;
+    display: block;
     margin: 20px auto;
 }
 
+#showMyServers input {
+    display: inline;
+    margin: 5px;
+    height: 15px;
+    width: 15px;
+}
+
 #servers {
-    display: flex;
+    display: grid;
+    grid-template-columns: min-content min-content min-content min-content min-content min-content;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1500px) {
+    #servers {
+        display: grid;
+        grid-template-columns: min-content min-content min-content min-content min-content;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    #servers {
+        display: grid;
+        grid-template-columns: min-content min-content min-content min-content;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #servers {
+        display: grid;
+        grid-template-columns: min-content min-content min-content;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #servers {
+        display: grid;
+        grid-template-columns: min-content min-content;
+        justify-content: center;
+    }
+
+    .header {
+        display: block;
+    }
+
+    .header *{
+        margin: 5px auto;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #servers {
+        display: grid;
+        grid-template-columns: min-content;
+        justify-content: center;
+    }
 }
 
 .server {
-    padding: 10px;
     border: 2px solid #d1bc82;
     margin: 10px;
     border-radius: 5px;
+    padding: 10px;
+}
+
+.server div {
+    margin: 10px auto;
+    text-align: center;
 }
 
 .server-list-container {
     margin-bottom: 100px;
 }
 
-.server-list-header > div, .server-list-item > div {
+.server-list-header *, .server-list-item * {
     text-align: center;
 }
 
@@ -176,18 +268,18 @@ input, textarea {
     padding: 5px  10px;
     display: grid;
     grid-template-columns: 0.7fr 4fr 0.7fr 0.7fr;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.45);
     margin-bottom: 1px;
     width: 100%;
 }
 
 .server-list-header{
     font-weight: bolder;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.55);
 }
 
 .server-list-item:nth-child(even) {
-    background: rgba(34, 34, 34, 0.4);
+    background: rgba(20, 20, 20, 0.45);
 }
 
 .server-list-item:hover{
@@ -205,18 +297,25 @@ input, textarea {
 body.doki-theme {
     color:  #ffb7c5;
     background-image: url("bg-doki.png");
+    /* background-image: url("https://i.imgur.com/33gmDNW.png"); */
 }
 
 body.doki-theme .logo {
     background-image: url("logo-doki.png");
+    /* background-image: url("https://i.imgur.com/SOKF0PC.png"); */
 }
 
 body.doki-theme .theme-toogle {
     background-image: url("sw-doki.png");
+    /* background-image: url("https://i.imgur.com/M9uyEzZ.png"); */
 }
 
 body.doki-theme .my-servers-form-button {
     background-color:  #ffb7c5;
+}
+
+body.doki-theme .server {
+    border-color: #ffb7c5;
 }
 
 body.doki-theme .my-servers-form-button:hover {
@@ -226,7 +325,7 @@ body.doki-theme .my-servers-form-button:hover {
     box-shadow:0 0 10px #ffb7c5;
 }
 
-body.doki-theme input, textarea {
+body.doki-theme input, body.doki-theme textarea {
     color: #ffb7c5;
 }
 

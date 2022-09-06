@@ -15,37 +15,67 @@
         <div class="my-servers-button">Mои серверы</div>
     </div>
     <div class="my-servers-form">
-        <div id="auth" class="my-servers-form-button">Войти через Discord</div>
+        <div class="my-servers-form-button-container">
+            <div id="auth" class="my-servers-form-button">Войти через Discord</div>
         <div id="createServer" class="my-servers-form-button server-enter-data">Создать сервер</div>
-        <div id="account" class=" ">
-            <div id="accStatus" >Вход выполнен</div>
-            <div>id: <span id="accId">2</span></div>
-            <div>Логин: <span id="accUsername">Ржавой Панк Шиза Санитара</span></div>
-            <input type="text" placeholder="Telegram ID" id="accTelegramId">
-            <div id="updateAccData" class="my-servers-form-button">Обновить</div>
         </div>
+        <h2 id="accStatus" >Вход выполнен</h2>
+        <div id="account">
+            <div><b>ID:</b></div>
+            <div id="accId">2</div>
+            <div><b>Логин:</b></div>
+            <div id="accUsername">Ауешник_1488</div>
+        </div>
+        <input type="text" placeholder="Telegram ID" id="accTelegramId">
+        <div id="updateAccData" class="my-servers-form-button">Обновить</div>
         <div id="signupForm" class=" hide">
             <input type="text" placeholder="Логин" id="signupUsername">
             <div id="signupAction" class="my-servers-form-button">Вход</div>
         </div>
-        <h3>Мои серверы:</h3>
+        <h2>Мои серверы:</h2>
         <div id="servers">
             <div class="server">
-                <div class="server-info">2 eso "имя": фамилия</div>
+                <div class="server-info">2. Всем привет ауе ауе ауе ауе ауе ауе ауе </div>
                 <div class="my-servers-form-button">Перезапустить</div>
                 <div class="my-servers-form-button server-enter-data">Изменить</div>
             </div>
             <div class="server">
                 <div class="server-name"></div>
-                <div class="server-info">2 eso "Название": Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                <div class="server-info">2."Название"</div>
                 <div class="my-servers-form-button">Перезапустить</div>
                 <div class="my-servers-form-button change-action server-enter-data">Изменить</div>
             </div>
             <div class="server">
-                <div class="server-info">2 eso "имя": фамилия</div>
+                <div class="server-info">2."Название"</div>
                 <div class="my-servers-form-button">Перезапустить</div>
                 <div class="my-servers-form-button server-enter-data">Изменить</div>
             </div>
+            <div class="server">
+                <div class="server-info">2 "Название"</div>
+                <div class="my-servers-form-button">Перезапустить</div>
+                <div class="my-servers-form-button server-enter-data">Изменить</div>
+            </div>
+            <div class="server">
+                <div class="server-info">2 "Название"</div>
+                <div class="my-servers-form-button">Перезапустить</div>
+                <div class="my-servers-form-button server-enter-data">Изменить</div>
+            </div>
+            <div class="server">
+                <div class="server-info">2 "Название"</div>
+                <div class="my-servers-form-button">Перезапустить</div>
+                <div class="my-servers-form-button server-enter-data">Изменить</div>
+            </div>
+            <div class="server">
+                <div class="server-info">2 "Название"</div>
+                <div class="my-servers-form-button">Перезапустить</div>
+                <div class="my-servers-form-button server-enter-data">Изменить</div>
+            </div>
+            <div class="server">
+                <div class="server-info">2 "Название"</div>
+                <div class="my-servers-form-button">Перезапустить</div>
+                <div class="my-servers-form-button server-enter-data">Изменить</div>
+            </div>
+            
         </div>
     </div>
     <div id="serverParamsForm" class=" ">
@@ -56,6 +86,9 @@
         <div id="serverParamsAction" class="my-servers-form-button">Отправить</div>
         <div class="my-servers-form-button server-enter-data-cancel">Отмена</div>
     </div>
+    <label id="showMyServers">Показывать только мои серверы
+        <input type="checkbox">
+    </label>
     <div class="server-list-container">
         <div class="server-list-header">
             <div class="server-list-name">Имя сервера</div>
